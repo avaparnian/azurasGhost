@@ -1,135 +1,60 @@
-/* 
-body - 090312
-text - 921eff
-*/
+@font-face {
+    font-family: "angel";
+    src: url(../fonts/angel.ttf) format("truetype");
+}
 
-/* Contains the contact, activity, and main box */
 body {
-    background-color: #090312;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 5em;
-}
-
-/* contains contact information */
-#contactBox {
-    width: 20%;
-}
-
-/* contains the content, posts and title */
-#mainBox {
-    width: 60%;
-}
-
-/* contains the posts and nav */
-#contentBox {
-    position: relative;
-    border: 2px solid transparent;
-    border-top: 0;
+    src: url(../images/angel.ttf);
+    background-image: url();
+    background-size: 8.2em;
+    margin: 0;
+    border: 0 ;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
-#contentBox::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border: 2px solid #921eff; /* actual dashed border */
-    filter: drop-shadow(0 0 5px #921eff)
-            drop-shadow(0 0 10px #921eff)
-            drop-shadow(0 0 15px #921eff);
-    pointer-events: none; /* don’t block clicks */
+h1 {
+    align-self: left;
+    margin-left: 25%;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+    color: black;
+    font-size: 6em ;
 }
 
-nav {
-    background-color: #921eff;
-    height: 3em;
-
-}
-
-#navList {
-    list-style-type: none;
+#content {
+    padding-top: em;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
 }
 
-li {
-    width: fit-content;
-    text-align: center;
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 1rem;
+#left {
+    width: 20%;
+    height: 300px;
 
+ background-color: #505050;
+    border-style: ridge;
+    border-width: 0.4em;
 }
 
-.postBox {
-    align-self: center;
-    position: relative;
-    border: 2px dashed transparent;
-    border-top: 0;
-    margin-top: 3em;
-    margin-bottom: 3em;
-    width: 90%;
+#middle {
+    width: 50%;
+    height: 1000px;
+
+    background-color: #505050;
+    border-style: ridge;
+    border-width: 0.4em;
 }
 
-.postBox::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border: 2px dashed #921eff; /* actual dashed border */
-    filter: drop-shadow(0 0 5px #921eff)
-            drop-shadow(0 0 10px #921eff)
-            drop-shadow(0 0 15px #921eff);
-    pointer-events: none; /* don’t block clicks */
-}
+#right {
+    width: 20%;
+    height: 500px;
 
-p {
-    color: #921eff;
-    text-shadow: 0 0 5px #921eff,0 0 10px #921eff,0 0 15px #921eff;
-    font-family: monospace;
-}
-
-.postTitle {
-    
-    font-size: 3em;
-    font-weight: bold;
-    padding-top: 0px;
-    padding-left: 1.5em;
-    text-transform: uppercase;
-}
-
-.postDate {
-
-}
-
-.postContent {
-
-}
-
-
-
-
-/* contains current activity */
-#activityBox {
-width: 20%;
-}
-
-
-p {
-    color: red;
-}
-
-#title {
-    width: fit-content;
-    color: #921eff;
-    text-shadow: 0 0 5px #921eff,0 0 10px #921eff,0 0 15px #921eff;
-    font-size: 1em;
-    font-family: monospace;
-}
-
-.text {
-    color: #921eff;
-    text-shadow: 0 0 5px #921eff,0 0 10px #921eff,0 0 15px #921eff;
+ background-color: #505050;
+    border-style: ridge;
+    border-width: 0.4em;
 }
